@@ -19,7 +19,6 @@ function App() {
         <Route path="/produto" element={<Produto />} />
         <Route path="/listarProdutos" element={<ListarProduto />} />
         <Route path="/cadastrarProdutos" element={<CadastrarProduto />} />
-        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )

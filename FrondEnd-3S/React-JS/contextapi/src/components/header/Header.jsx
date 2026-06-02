@@ -12,7 +12,6 @@ const Header = () => {
             <Link to="/produto">Produto</Link>{" "}
             <Link to="/listarProdutos">Listar Produtos</Link>{" "}
             <Link to="/cadastrarProdutos">Cadastrar Produtos</Link>{" "}
-            <Link to="/login">Login</Link>{" "}
             </nav>
             <h2>Bem-vindo,{usuario}</h2>
         </header>

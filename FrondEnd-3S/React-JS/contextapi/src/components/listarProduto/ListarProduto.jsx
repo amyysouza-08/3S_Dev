@@ -3,13 +3,13 @@ import { ProdutoContext } from "../../context/ProdutoContext";
 
 const ListarProduto = () => {
     const {listaProdutos} = useContext(ProdutoContext)
-    
+
     return (
         <>
         <h2>Listagem de Produtos</h2>
-        {listaProdutos.map((item)=>{
+        {listaProdutos.map((item, index)=>{
             
-            <p>{item}</p>
+            return (<p key={index}>{item}</p>)
         })}
         </>
 
