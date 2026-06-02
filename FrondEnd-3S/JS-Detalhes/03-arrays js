@@ -1,0 +1,16 @@
+
+let frutasVermelhas = new Array();
+let frutasCitricas = ["Laranja", "Limão", "Maracujá"];
+
+frutasVermelhas.push("Morango");
+frutasVermelhas.push("Maçã");
+frutasVermelhas.push("Framboesa");
+frutasVermelhas.push("Cereja");
+frutasVermelhas.push("Tomate");
+
+console.log(frutasVermelhas);
+console.log(frutasCitricas);
+
+ let frutaRemovida = frutasVermelhas.pop();//remove o ultimo item da lista/array
+console.log(frutaRemovida);
+console.log(frutasVermelhas);

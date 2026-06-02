@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="form-header">
+        <div class="container container--flex">
+        <img 
+        src="./images/mdi_drivers-license-outline.png"
+        alt="imagem ilustrativa"
+        class="form-header__img-perfil"/>
+        
+        <h1 class="form-header__titulo">Contact Form</h1>
+        <p class="form-header__texto">Insira os dados do contato e clique em cadastrar!</p>
+        </div>
+    </header>
+    <main>
+        
+
+    <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+                <label  class="frm-contact__label"
+                 for="nome">Nome</label>
+            </div>
+            <div class="frm-contact__col-b">
+                <input class="frm-contact__input frm-contact__input--metade" 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Nome">
+                <input class="frm-contact__input frm-contact__input--metade" 
+                type="text" 
+                id="sobrenome" 
+                name="sobrenome" 
+                placeholder="Sobrenome">
+            </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+                <label  class="frm-contact__label" for="email">Email</label>
+            </div>
+            <div class="frm-contact__col-b">
+                <input 
+                class="frm-contact__input frm-contact__input--inteiro" 
+                type="text" 
+                id="email" 
+                name="email"
+                placeholder="Email">
+            </div>
+            </div>
+        </form>
+
+        </form>
+    <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+                <label  class="frm-contact__label" 
+                for="Telefone">Telefone</label>
+            </div>
+            <div class="frm-contact__col-b">
+                <input class="frm-contact__input frm-contact__input--terco" 
+                type="text" 
+                id="numero" 
+                name="+55" 
+                placeholder="+55">
+                <input class="frm-contact__input frm-contact__input--terco" 
+                type="text" 
+                id="ddd" 
+                name="ddd" 
+                placeholder="ddd">
+                <input class="frm-contact__input frm-contact__input--terco" type="text" id="telefone" name="ex:99999-9999" placeholder="ex:99999-9999">
+            </div>
+            </div>
+        </form>
+     <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+                <label  class="frm-contact__label" for="Endereço">Endereço</label>
+            </div>
+            <div class="frm-contact__col-b">
+                <input class="frm-contact__input frm-contact__input--quarto" type="text" id="cep" name="cep:9999-999" placeholder="cep:9999-999" onblur="buscarEndereco(this.value)">
+                <input class="frm-contact__input frm-contact__input--metade" type="text" id="rua" name="rua" placeholder="Rua la de casa">
+                <input class="frm-contact__input frm-contact__input--quarto" type="text" id="numeroC" name="ex:555" placeholder="ex:555">
+            </div>
+            </div>
+     <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+            </div>
+            <div class="frm-contact__col-b">
+                <input class="frm-contact__input frm-contact__input--terco" type="text" id="apto" name="apto. 12 Bloco X" placeholder="apto. 12 Bloco X">
+                <input class="frm-contact__input frm-contact__input--terco" type="text" id="bairro" name="bairro" placeholder="Bairro">
+                <input class="frm-contact__input frm-contact__input--terco" type="text" id="cidade" name="cidade" placeholder="Cidade">
+            </div>
+            </div>
+     <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+            </div>
+            <div class="frm-contact__col-b">
+                <input class="frm-contact__input frm-contact__input--terco" type="text" id="estado" name="estado" placeholder="Estado">
+            </div>
+            </div>
+     <div class="container">
+        <form  class="frm-contact" action="">
+            <div class="frm-contact__linha">
+            <div class="frm-contact__col-a">
+                 <label  class="frm-contact__label" for="Anotacoes">Anotações</label>
+            </div>
+            <div class="frm-contact__col-b">
+                <textarea class="frm-contact__input frm-contact__input--anotacoes" name="Suas anotações aqui" id="anotacoes" placeholder="Suas anotações aqui"></textarea>
+            </div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="validaForm()" class="custom-button" type="button">Cadastrar</button>
+                <button class="custom-button">Limpar</button>
+            </div>
+
+    </div>
+    </main>
+    <footer>Todos os direitos reservados</footer>
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>

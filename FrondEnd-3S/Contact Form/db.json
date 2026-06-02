@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "nome": "James",
+      "sobrenome": "Silva",
+      "id": "1"
+    },
+    {
+      "id": "AZyxtRvqGrs",
+      "nome": "Amy",
+      "sobrenome": "Souza"
+    },
+    {
+      "nome": "Joaquina",
+      "sobrenome": "Lee",
+      "id": "5k5n5M_BrwA"
+    },
+    {
+      "nome": "Fernanda",
+      "sobrenome": "Lee",
+      "id": "5-8d-WTh-HE"
+    },
+    {
+      "nome": "adadad",
+      "sobrenome": "adadada",
+      "id": "8xW7YM2saNE"
+    },
+    {
+      "nome": "amy",
+      "sobrenome": "lee",
+      "email": "amy@amy",
+      "numero": "123456789",
+      "ddd": "11",
+      "telefone": "1234567890",
+      "cep": "04230200",
+      "rua": "Rua Anísio Spínola Teixeira",
+      "numeroC": "12",
+      "apto": "11",
+      "bairro": "Cidade Nova Heliópolis",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "anotacoes": "oi",
+      "id": "hkxoGjJ7VNg"
+    },
+    {
+      "nome": "bhcwsbce",
+      "sobrenome": "ftjdrjh",
+      "email": "aehwrjyjhsdgsd",
+      "numero": "s12345678",
+      "ddd": "11",
+      "telefone": "1234567890",
+      "cep": "04257-245",
+      "rua": "Avenida Marginal",
+      "numeroC": "rr",
+      "apto": "qq",
+      "bairro": "Vila Cristália",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "anotacoes": "oi",
+      "id": "K9hAv6Pp3Xw"
+    },
+    {
+      "nome": "Amy",
+      "sobrenome": "Rebeka",
+      "email": "amyysouza",
+      "numero": "55",
+      "ddd": "ewedcrtfvygbuhnjimk",
+      "telefone": "werxctfvghyuik",
+      "cep": "04257-245",
+      "rua": "Avenida Marginal",
+      "numeroC": "rr",
+      "apto": "qq",
+      "bairro": "Vila Cristália",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "anotacoes": "tgbhnjk",
+      
+      "id": "FMk-c5W7nVo"
+    },
+    {
+
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

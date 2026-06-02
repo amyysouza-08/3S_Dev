@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-weight: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 991px) {
+    h1{
+        color: greenyellow;
+    }
+    .icone{
+        display: none;
+        width: 100px;
+        height: 100px;
+
+    }
+
+}
+@media screen and (max-width: 767px) {
+  h1{
+    color: white;
+    background-color: pink;
+  }  
+  .icone{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+}

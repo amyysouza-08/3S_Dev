@@ -1,0 +1,12 @@
+{
+  "produtos": [
+    {
+      "produto": "2134",
+      "descricao": "QWERTYUI",
+      "preco": 244,
+      "imagem": "31245",
+      "id": "oLZ7g1Y3gDE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

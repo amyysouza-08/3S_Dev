@@ -1,0 +1,156 @@
+@font-face{
+    font-family: Architects;
+    src: url(../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background-image: linear-gradient(to right, rgb(190, 128, 252), rgb(148, 31, 206));
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+.container--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-header__img-perfil{
+    width: 80px;
+    padding: 20px;
+
+    box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.2);
+}
+.form-header__titulo{
+    color: rgb(240, 212, 255);
+    font-family: Architects;
+}
+.form-header__texto{
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-contact{
+    padding: 20px;
+
+}
+.frm-contact__linha{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 60px; */
+    /* border: 1px solid white; */
+    /* align-items: center; */
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.frm-contact__col-a{
+    width: 10%;
+    height: 100%;
+    /* border:1px solid white; */
+    
+}
+.frm-contact__col-b{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    /* border:1px solid white; */
+}
+.frm-contact__label{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.frm-contact__input{
+    padding: 5px 10px;
+    height: 35px;
+    color: rgb(122, 196, 245);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.2);
+    outline: none;
+    transition: background-color 0.4s ease, color 0.4s ;
+
+}
+.frm-contact__input::placeholder{
+    color: rgb(54, 3, 77);
+}
+.frm-contact__input:focus{
+   background-color: rgb(231, 152, 247);
+   color: white;
+   box-shadow: 0px 0px 15px rgb(224, 229, 244);
+}
+.frm-contact__input--metade{
+   width: 48%;
+
+}
+.frm-contact__input--inteiro{
+   width: 100%;
+
+}
+.frm-contact__input--terco{
+   width: 32%;
+   
+}
+.frm-contact__input--quarto{
+   width: 25%;
+   
+}
+.frm-contact__input--anotacoes{
+    width: 150%;
+    height: 150px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.custom-button{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(59, 4, 87);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-items: space-between;
+}
+@media (max-width: 480px){
+
+    .frm-contact__linha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frm-contact__col-a {
+        display: none;
+    }
+
+    .frm-contact__col-b {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start; 
+    }
+
+    .frm-contact__input {
+        width: 100% !important;
+    }
+
+}
+
+

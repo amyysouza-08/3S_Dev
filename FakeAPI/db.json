@@ -1,0 +1,97 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Juan Pérez",
+      "email": "juan.perez@example.com"
+    },
+    {
+      "nome": "Amy Lee",
+      "email": "amy@amy",
+      "id": "ZZxBWGfkBYg"
+    }
+  ],
+  "frutas": [],
+  "calculadora": [
+    {
+      "n1": 78,
+      "n2": 78,
+      "op": "multiplicacao",
+      "resultado": "6084.00",
+      "id": "4tFFarEyyqE"
+    },
+    {
+      "n1": 67,
+      "n2": 67,
+      "op": "multiplicacao",
+      "resultado": "4489.00",
+      "id": "ZH6C6WEX9NQ"
+    },
+    {
+      "n1": 44,
+      "n2": 3,
+      "op": "subtracao",
+      "resultado": "41.00",
+      "id": "c-FpLhVTsXo"
+    }
+  ],
+  "imc": [
+    {
+      "nome": "Julia",
+      "altura": 1.6,
+      "peso": 85,
+      "imc": 33.20312499999999,
+      "situacao": "Obesidade Grau I",
+      "id": "4wPdbmyE97Q"
+    },
+    {
+      "nome": "Vitoria",
+      "altura": 1.5,
+      "peso": 85,
+      "imc": 37.77777777777778,
+      "situacao": "Obesidade Grau II (considerada severa)",
+      "id": "Ty8qaVGPpDw"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "Zm-XMNAdYxA"
+    },
+    {
+      "nome": "Lucca",
+      "altura": 1.8,
+      "peso": 70,
+      "imc": 21.604938271604937,
+      "situacao": "Saudável",
+      "id": "bY0xW9PP6Ac"
+    },
+    {
+      "nome": "Yasmin",
+      "altura": 1.55,
+      "peso": 60,
+      "imc": 24.97398543184183,
+      "situacao": "Saudável",
+      "id": "TasLeNwQmGQ"
+    },
+    {
+      "nome": "amy lee",
+      "altura": 1.55,
+      "peso": 60,
+      "imc": 24.97398543184183,
+      "situacao": "Saudável",
+      "id": "jxCCNqYUwvg"
+    },
+    {
+      "nome": "damon",
+      "altura": 1.8,
+      "peso": 70,
+      "imc": 21.604938271604937,
+      "situacao": "Saudável",
+      "id": "MdK49qF2qJk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

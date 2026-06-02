@@ -1,0 +1,111 @@
+﻿using Filmes.WebAPI.Intterface;
+using Filmes.WebAPI.Models;
+using Filmes.WebAPI.Intterface;
+using Filmes.WebAPI.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Filmes.WebAPI.DTO;
+
+
+namespace Filmes.WebAPI.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class GeneroController : ControllerBase
+{
+    private readonly IGeneroRepository _generoRepository;
+
+    public GeneroController(IGeneroRepository generoRepository)
+    {
+        _generoRepository = generoRepository;
+    }
+
+    [HttpGet]
+    public IActionResult Get()
+    {
+        try
+        {
+            return Ok(_generoRepository.Listar());
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    [HttpGet("{id}")]
+    public IActionResult GetById(Guid Id)
+    {
+        try
+        {
+            return Ok(_generoRepository.BuscarPorId(Id));
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    [HttpPost]
+    public IActionResult Post(GeneroDTO genero)
+    {
+        try
+        {
+            var novoGenero = new Genero
+            {
+                Nome = genero.Nome!
+            };
+            _generoRepository.Cadastrar(novoGenero);
+            return StatusCode(201);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+
+    }
+    [HttpPut("{id}")]
+    public IActionResult Put(Guid id, GeneroDTO genero)
+    {
+        try
+        {
+            var generoAtualizado = new Genero
+            { 
+                Nome = genero.Nome!
+            };
+
+
+
+            _generoRepository.AtualizarIdUrl(id, generoAtualizado);
+            return StatusCode(201);
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    [HttpPut]
+    public IActionResult PutBody(Genero generoAtualizado)
+    {
+        try
+        {
+            _generoRepository.AtualizarIdCorpo(generoAtualizado);
+            return NoContent();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    [HttpDelete("{id}")]
+    public IActionResult Delete(Guid id)
+    {
+        try
+        {
+            _generoRepository.Deletar(id);
+            return NoContent();
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+}
