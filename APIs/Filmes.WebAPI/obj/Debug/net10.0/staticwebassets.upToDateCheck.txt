@@ -2,5 +2,7 @@ wwwroot\imagens\e3e41354-c859-4170-b126-c4de2f67c511.jpg
 wwwroot\imagens\0a81eff3-2441-4c02-8b7b-21f04f02c397.webp
 wwwroot\imagens\01ec8f4f-3f66-4202-b52c-888530ed7fa4.webp
 wwwroot\imagens\ef07ed1e-df7c-431e-86a0-4bdb070fdaa4.png
-wwwroot\imagens\259dd6b6-f813-43f9-833d-d7fbd227b21c.png
-wwwroot\imagens\136a4aac-3830-45d9-849e-96990b9c4922.png
+wwwroot\imagens\c25f9cce-678a-4303-bb28-406dd39be383.jpg
+wwwroot\imagens\49c8b530-ac5b-4219-80ef-e9cffa4e4570.jpg
+wwwroot\imagens\d9627a14-d7ca-4fb6-9fa6-5f3eac97ac87.webp
+wwwroot\imagens\4f2baa9b-29ed-4984-ae45-bb82b45a64c6.jpg

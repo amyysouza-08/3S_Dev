@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { UsuarioContext } from "./UsuarioContext"
+import { UsuarioContext } from "./EmailContext"
 
-export const UsuarioProvider = ({children}) => {
+export const EmailProvider = ({children}) => {
     const [usuario, setUsuario] = useState(null)
     useEffect(() => {
         const usuarioLogado = JSON.parse(localStorage.getItem("usuario"))
@@ -9,10 +9,10 @@ export const UsuarioProvider = ({children}) => {
     },[])
 
     return(
-        <UsuarioContext.Provider
+        <EmailContext.Provider
         value={{usuario, setUsuario}}
         >
            {children}
-        </UsuarioContext.Provider>
+        </EmailContext.Provider>
     )
 }

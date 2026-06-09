@@ -3,7 +3,11 @@ import { useContext } from "react"
 import { UsuarioContext } from "../../context/UsuarioContext"
 
 const Header = () => {
-    const {usuario} = useContext(UsuarioContext)
+    const {usuario, setUsuario} = useContext(UsuarioContext)
+    const logout = () => {
+        localStorage.removeItem("usuario")
+        setUsuario(null)
+    }
     return (
         <header>
             <nav>
@@ -13,7 +17,12 @@ const Header = () => {
             <Link to="/listarProdutos">Listar Produtos</Link>{" "}
             <Link to="/cadastrarProdutos">Cadastrar Produtos</Link>{" "}
             </nav>
-            <h2>Bem-vindo,{usuario}</h2>
+            <h2>Bem-vindo,{usuario ? usuario : "Visitante"}
+                <button
+                 onClick={()=>{logout()}}
+                >Sair</button>
+
+            </h2>
         </header>
         
     )
