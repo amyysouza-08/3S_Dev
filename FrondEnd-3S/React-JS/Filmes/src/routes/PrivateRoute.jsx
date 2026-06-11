@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { UsuarioContext } from "../context/EmailContext"
 import { Navigate } from "react-router-dom";
+import { EmailContext } from "../context/email/EmailContext";
+import { SenhaContext } from "../context/senha/SenhaContext";
 
-
-const PrivateRoute = ({ children }) => {
-    const {usuario} = useContext(UsuarioContext)
-
-    return usuario ? children : <Navigate to="/" />
-                            
+const PrivateRoutes = ({children}) => {
+    const { email } = useContext(EmailContext);
+    const { senha } = useContext(SenhaContext);
+    return email && senha ? children : <Navigate to="/" />
 }
-export default PrivateRoute
+export default PrivateRoutes;
